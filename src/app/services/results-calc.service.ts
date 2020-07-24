@@ -498,7 +498,7 @@ export class ResultsCalcService {
         bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*-0.14554;
         ageSmokeWeight = Math.log(age)*smokerNum*-0.92560;        
         statinWeight = statin*-0.033734;
-        if (diabetes===1) 
+        if (diabetes===1) //
         {
             a1cWeight = Math.log(a1c)*0.92618;
             egfrWeight = Math.log(egfr)*-0.35818;
