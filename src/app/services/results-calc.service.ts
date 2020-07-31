@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { stringify } from 'querystring';
 import { MapType, MethodCall } from '@angular/compiler';
 import { ENGINE_METHOD_DIGESTS } from 'constants';
+import * as $ from 'jquery';
 
 export  function numberFormat(val:number,decimalPlaces:number) :number
 /*Function Name: numberFormat
@@ -79,19 +80,21 @@ export class ResultsCalcService {
     _specimen = new Map();
     _convUnit = new Map();
     _SI_Unit = new Map();
+    _data: any;
    
 
 
   constructor(vals:Object,calcType: String) { 
     //load maps with json
-    /*let data = new Object();  not working yet
+    let data = new Object();  //not working yet
     $.ajax({ 
-    url: "si-conversions.json",
+    url: "../si-conversions.json",
     dataType: 'json', 
     data: data, 
     async: false, 
     success: function(data){ 
     if (data.length > 0) {
+        console.log(">0");
         //var arrItems = [];              // The array to store JSON data.
         $.each(data, function (index, value) {
             this._factor.set(value.Analyte,value.Factor);
@@ -101,7 +104,12 @@ export class ResultsCalcService {
         });                 
         }
         }
-        });*/
+        });
+        console.log(this._factor.get("Acetaminophen"));
+        //call method to read data from json
+        //this.read_data();
+
+
    //populate instance variables
    this._vals = vals; 
     
@@ -119,6 +127,20 @@ export class ResultsCalcService {
     }
 
   }
+  read_data()
+  {
+    fetch('../si-conversions.json').then(res => res.json())
+    /*.then(json => {
+        this._data = json;
+        this._factor.set(json.Analyte,json.Factor);
+        this._specimen.set(json.Analyte,json.Specimen);
+        this._convUnit.set(json.Analyte,json.ConvUnit);
+        this._SI_Unit.set(json.Analyte,json.SI_Unit);
+        console.log(this._data);
+        })*/
+        /*.then(res => res.text())          // convert to plain text
+        .then(text => console.log(text)) */
+   }
  get calc_results()
      {
          return this._results;

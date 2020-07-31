@@ -357,21 +357,21 @@
       "SI_Unit": ""
     },
     {
-      "Analyte": "    Carbon dioxide, Pco2",
+      "Analyte": "Carbon dioxide, Pco2",
       "Specimen": "Arterial blood",
       "ConvUnit": "mm Hg",
       "Factor": 0.133,
       "SI_Unit": "kPa"
     },
     {
-      "Analyte": "    pH",
+      "Analyte": "pH",
       "Specimen": "Arterial blood",
       "ConvUnit": "",
       "Factor": 1,
       "SI_Unit": ""
     },
     {
-      "Analyte": "    Oxygen, Po2",
+      "Analyte": "Oxygen, Po2",
       "Specimen": "Arterial blood",
       "ConvUnit": "mm Hg",
       "Factor": 0.133,
@@ -630,7 +630,7 @@
       "SI_Unit": "µmol/L"
     },
     {
-      "Analyte": "    (Fibrinogen)",
+      "Analyte": "(Fibrinogen)",
       "Specimen": "Plasma",
       "ConvUnit": "mg/dL",
       "Factor": 0.01,
@@ -917,84 +917,84 @@
       "SI_Unit": ""
     },
     {
-      "Analyte": "    Proportion of total protein",
+      "Analyte": "Proportion of total protein",
       "Specimen": "",
       "ConvUnit": "",
       "Factor": null,
       "SI_Unit": ""
     },
     {
-      "Analyte": "        Albumin",
+      "Analyte": "Albumin",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        α1-Globulin",
+      "Analyte": "α1-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        α2-Globulin",
+      "Analyte": " α2-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        ß-Globulin",
+      "Analyte": "ß-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        γ-Globulin",
+      "Analyte": "γ-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "    Concentration",
+      "Analyte": "Concentration",
       "Specimen": "",
       "ConvUnit": "",
       "Factor": null,
       "SI_Unit": ""
     },
     {
-      "Analyte": "        Albumin",
+      "Analyte": "Albumin",
       "Specimen": "Serum",
       "ConvUnit": "g/dL",
       "Factor": 10,
       "SI_Unit": "g/L"
     },
     {
-      "Analyte": "        α1-Globulin",
+      "Analyte": "α1-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "g/dL",
       "Factor": 10,
       "SI_Unit": "g/L"
     },
     {
-      "Analyte": "        α2-Globulin",
+      "Analyte": "α2-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "g/dL",
       "Factor": 10,
       "SI_Unit": "g/L"
     },
     {
-      "Analyte": "        ß-Globulin",
+      "Analyte": "ß-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "g/dL",
       "Factor": 10,
       "SI_Unit": "g/L"
     },
     {
-      "Analyte": "        γ-Globulin",
+      "Analyte": "γ-Globulin",
       "Specimen": "Serum",
       "ConvUnit": "g/dL",
       "Factor": 10,
@@ -1316,21 +1316,21 @@
       "SI_Unit": "g/L"
     },
     {
-      "Analyte": "    Mean corpuscular hemoglobin (MCH)",
+      "Analyte": "Mean corpuscular hemoglobin (MCH)",
       "Specimen": "Whole blood",
       "ConvUnit": "pg/cell",
       "Factor": 1,
       "SI_Unit": "pg/cell"
     },
     {
-      "Analyte": "    Mean corpuscular hemoglobin concentration (MCHC)",
+      "Analyte": "Mean corpuscular hemoglobin concentration (MCHC)",
       "Specimen": "Whole blood",
       "ConvUnit": "g/dL",
       "Factor": 10,
       "SI_Unit": "g/L"
     },
     {
-      "Analyte": "    Mean corpuscular volume (MCV)",
+      "Analyte": "Mean corpuscular volume (MCV)",
       "Specimen": "Whole blood",
       "ConvUnit": "µm3",
       "Factor": 1,
@@ -1561,35 +1561,35 @@
       "SI_Unit": ""
     },
     {
-      "Analyte": "    LD1",
+      "Analyte": "LD1",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "    LD2",
+      "Analyte": "LD2",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "    LD3",
+      "Analyte": "LD3",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "    LD4",
+      "Analyte": "LD4",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "    LD5",
+      "Analyte": "LD5",
       "Specimen": "Serum",
       "ConvUnit": "%",
       "Factor": 0.01,
@@ -1608,13 +1608,6 @@
       "ConvUnit": "mg/dL",
       "Factor": 76.237,
       "SI_Unit": "µmol/L"
-    },
-    {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
     },
     {
       "Analyte": "Lidocaine",
@@ -1664,13 +1657,6 @@
       "ConvUnit": "mg/L",
       "Factor": 1.863,
       "SI_Unit": "µmol/L"
-    },
-    {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
     },
     {
       "Analyte": "Lysergic acid diethylamide",
@@ -1981,13 +1967,6 @@
       "SI_Unit": "µg/L"
     },
     {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
-    },
-    {
       "Analyte": "Phencyclidine (toxic)",
       "Specimen": "Serum, plasma",
       "ConvUnit": "ng/mL",
@@ -2170,13 +2149,6 @@
       "SI_Unit": "nmol/L"
     },
     {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
-    },
-    {
       "Analyte": "Pyruvate",
       "Specimen": "Plasma",
       "ConvUnit": "mg/dL",
@@ -2217,20 +2189,6 @@
       "ConvUnit": "% of red blood cells",
       "Factor": 0.01,
       "SI_Unit": "Proportion of red blood cells"
-    },
-    {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
-    },
-    {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
     },
     {
       "Analyte": "Rifampin",
@@ -2359,13 +2317,6 @@
       "SI_Unit": "µmol/L"
     },
     {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
-    },
-    {
       "Analyte": "Thiopental",
       "Specimen": "Serum, plasma",
       "ConvUnit": "µg/mL",
@@ -2392,13 +2343,6 @@
       "ConvUnit": "s",
       "Factor": 1,
       "SI_Unit": "s"
-    },
-    {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
     },
     {
       "Analyte": "Thyroglobulin",
@@ -2455,13 +2399,6 @@
       "ConvUnit": "µg/mL",
       "Factor": 5.201,
       "SI_Unit": "µmol/L"
-    },
-    {
-      "Analyte": "",
-      "Specimen": "",
-      "ConvUnit": "",
-      "Factor": null,
-      "SI_Unit": ""
     },
     {
       "Analyte": "Tolbutamide",
@@ -2688,98 +2625,98 @@
       "SI_Unit": "×109/L"
     },
     {
-      "Analyte": "    Differential count",
+      "Analyte": "Differential count",
       "Specimen": "",
       "ConvUnit": "",
       "Factor": null,
       "SI_Unit": ""
     },
     {
-      "Analyte": "        Neutrophils-segmented",
+      "Analyte": "Neutrophils-segmented",
       "Specimen": "Whole blood",
       "ConvUnit": "/µL",
       "Factor": 0.001,
       "SI_Unit": "×109/L"
     },
     {
-      "Analyte": "        Neutrophils-bands",
+      "Analyte": " Neutrophils-bands",
       "Specimen": "Whole blood",
       "ConvUnit": "/µL",
       "Factor": 0.001,
       "SI_Unit": "×109/L"
     },
     {
-      "Analyte": "        Lymphocytes",
+      "Analyte": "Lymphocytes",
       "Specimen": "Whole blood",
       "ConvUnit": "/µL",
       "Factor": 0.001,
       "SI_Unit": "×109/L"
     },
     {
-      "Analyte": "        Monocytes",
+      "Analyte": "Monocytes",
       "Specimen": "Whole blood",
       "ConvUnit": "/µL",
       "Factor": 0.001,
       "SI_Unit": "×109/L"
     },
     {
-      "Analyte": "        Eosinophils",
+      "Analyte": "Eosinophils",
       "Specimen": "Whole blood",
       "ConvUnit": "/µL",
       "Factor": 0.001,
       "SI_Unit": "×109/L"
     },
     {
-      "Analyte": "        Basophils",
+      "Analyte": "Basophils",
       "Specimen": "Whole blood",
       "ConvUnit": "/µL",
       "Factor": 0.001,
       "SI_Unit": "×109/L"
     },
     {
-      "Analyte": "    Differential count (number fraction)",
+      "Analyte": "Differential count (number fraction)",
       "Specimen": "",
       "ConvUnit": "",
       "Factor": null,
       "SI_Unit": ""
     },
     {
-      "Analyte": "        Neutrophils-segmented",
+      "Analyte": "Neutrophils-segmented",
       "Specimen": "Whole blood",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        Neutrophils-bands",
+      "Analyte": "Neutrophils-bands",
       "Specimen": "Whole blood",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        Lymphocytes",
+      "Analyte": "Lymphocytes",
       "Specimen": "Whole blood",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        Monocytes",
+      "Analyte": "Monocytes",
       "Specimen": "Whole blood",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        Eosinophils",
+      "Analyte": "Eosinophils",
       "Specimen": "Whole blood",
       "ConvUnit": "%",
       "Factor": 0.01,
       "SI_Unit": "Proportion of 1.0"
     },
     {
-      "Analyte": "        Basophils",
+      "Analyte": "Basophils",
       "Specimen": "Whole blood",
       "ConvUnit": "%",
       "Factor": 0.01,
