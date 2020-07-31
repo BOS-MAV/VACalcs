@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__ } from '@angular/core';
 import { stringify } from 'querystring';
 import { MapType, MethodCall } from '@angular/compiler';
 import { ENGINE_METHOD_DIGESTS } from 'constants';
@@ -76,43 +76,34 @@ export class ResultsCalcService {
    /*instance variables*/
     _results: Number[];
     _vals: Object;
-    _factor = new Map();
-    _specimen = new Map();
-    _convUnit = new Map();
-    _SI_Unit = new Map();
+    private _factor: Map<string,number>;
+    private _specimen: Map<string,string>;
+    private _convUnit: Map<string,string>;
+    private _SI_Unit: Map<string,string>;
     _data: any;
    
 
 
   constructor(vals:Object,calcType: String) { 
     //load maps with json
-    let data = new Object();  //not working yet
-    $.ajax({ 
-    url: "../si-conversions.json",
-    dataType: 'json', 
-    data: data, 
-    async: false, 
-    success: function(data){ 
-    if (data.length > 0) {
-        console.log(">0");
-        //var arrItems = [];              // The array to store JSON data.
-        $.each(data, function (index, value) {
-            this._factor.set(value.Analyte,value.Factor);
-            this._specimen.set(value.Analyte,value.Specimen);
-            this._convUnit.set(value.Analyte,value.ConvUnit);
-            this._SI_Unit.set(value.Analyte,value.SI_Unit);
-        });                 
-        }
-        }
-        });
-        console.log(this._factor.get("Acetaminophen"));
+    this._factor = new Map<string,number>();
+    this._specimen = new Map<string,string>();
+    this._convUnit = new Map<string,string>();
+    this._SI_Unit = new Map<string,string>();
+   
+
+    
         //call method to read data from json
         //this.read_data();
 
 
    //populate instance variables
    this._vals = vals; 
-    
+   this.load_map();
+   /*console.log(this._factor.get("Acetaminophen"));
+   console.log(this._specimen.get("Acetaminophen"));
+   console.log(this._convUnit.get("Acetaminophen"));
+   console.log(this._SI_Unit.get("Acetaminophen"));*/
    if (calcType === "HF")  //heart failure
       {
           this.hf_calc();
@@ -127,25 +118,49 @@ export class ResultsCalcService {
     }
 
   }
-  read_data()
-  {
-    fetch('../si-conversions.json').then(res => res.json())
-    /*.then(json => {
-        this._data = json;
-        this._factor.set(json.Analyte,json.Factor);
-        this._specimen.set(json.Analyte,json.Specimen);
-        this._convUnit.set(json.Analyte,json.ConvUnit);
-        this._SI_Unit.set(json.Analyte,json.SI_Unit);
-        console.log(this._data);
-        })*/
-        /*.then(res => res.text())          // convert to plain text
-        .then(text => console.log(text)) */
-   }
+ 
  get calc_results()
      {
          return this._results;
        }
 
+load_map()
+{
+    let data = new Object(); 
+    let factor = new Map<string,number>();
+    let specimen = new Map<string,string>();
+    let convUnit = new Map<string,string>();
+    let SI_Unit = new Map<string,string>();
+    $.ajax(
+        { 
+        url: "https://bos-mav.github.io/json/si%20conversions%20comp.json",
+        dataType: 'json', 
+        data: data, 
+        async: false, 
+        success: function(data)
+        { 
+            if (data.length > 0)
+            {
+                console.log(">0");
+                //var arrItems = [];              // The array to store JSON data.
+                for (let d of data) {
+                    /*console.log(d.Analyte);
+                    console.log(d.Factor);
+                    console.log(d.ConvUnit);
+                    console.log(d.SI_Unit);*/
+                    factor.set(d.Analyte,d.Factor);
+                    specimen.set(d.Analyte,d.Specimen);
+                    convUnit.set(d.Analyte,d.ConvUnit);
+                    SI_Unit.set(d.Analyte,d.SI_Unit);        
+                }
+            }
+        }
+    });
+    this._factor = factor;
+    this._specimen = specimen;
+    this._convUnit = convUnit;
+    this._SI_Unit = SI_Unit;
+}
 /*heart failure method */
    hf_calc ()
   {
